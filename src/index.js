@@ -4,6 +4,6 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
-server.listen(3333, () => {
+server.listen(80, () => {
   console.log('API ONLINE');
 });
