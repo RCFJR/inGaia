@@ -26,7 +26,7 @@ const swaggerOptions={
 const swaggerDocs = swaggerJsDocs(swaggerInfo);
 
 server.use('/', Routes);
-server.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+server.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 server.listen(process.env.PORT || 3333, () => {
   console.log('API ONLINE');
