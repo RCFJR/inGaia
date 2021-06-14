@@ -2,18 +2,6 @@ const CalculateModel = require('../model/Calculate');
 
 class CalculateController {
 
-    async create(req, res){
-        const calc = new CalculateModel(req.body);
-        await calc
-              .save()
-              .then(response => {
-                return res.status(200).json(response);
-              })
-              .catch(error => {
-                return res.status(500).json(error);
-              });
-      }
-
     async SquareMeterValue(req, res){
     
         await CalculateModel.find()
@@ -26,7 +14,6 @@ class CalculateController {
                 return res.status(500).json(error);
               });
       }
-
 
       async PropertyValue(req, res){
     
