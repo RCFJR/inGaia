@@ -7,7 +7,7 @@
 
     - API2 - Recebe quantidade de metros quadrados e calcula o valor do imóvel
     /PropertyValue
-    API GET - Espera um único parâmetro "metros" do tipo inteiro.
+    API GET - Espera um único parâmetro "meters" do tipo inteiro.
 
 
 ## Informações importantes:
